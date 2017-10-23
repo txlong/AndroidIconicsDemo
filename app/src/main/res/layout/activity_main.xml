@@ -6,13 +6,62 @@
     android:layout_height="match_parent"
     tools:context="com.txlong.android_iconicsdemo.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:ico_color="@color/colorPrimary"
+        app:ico_icon="@string/gmd_radio"
+        app:ico_size="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="56dp"
+        android:text="{gmd-bubble-chart} Chart"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView1" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/iconicsImageView1"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:iiv_color="@android:color/holo_red_dark"
+        app:iiv_icon="@string/gmd_palette"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/iconicsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="abc{gmd_star}defgh{gmd_access_alarm}ijk{gmd_ac_unit}lmnopqrstuv{gmd_add_circle_outline}wxyz"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconicsImageView1" />
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="{gmd_adjust} Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconicsTextView" />
 </android.support.constraint.ConstraintLayout>

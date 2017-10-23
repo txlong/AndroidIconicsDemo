@@ -31,4 +31,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //the core iconcis library (without any widgets)
+    compile "com.mikepenz:iconics-core:2.9.3@aar"
+    //this adds all ui view widgets (IconicsButton, IconicsImageView, ...)
+    compile "com.mikepenz:iconics-views:2.9.3@aar"
+    compile 'com.mikepenz:google-material-typeface:3.0.1.1.original@aar'
 }
